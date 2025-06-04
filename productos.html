@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Continental | Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  .filtro {
+    transition: all 0.3s ease;
+    transform: scale(1);
+  }
+
+  .filtro:hover {
+    transform: scale(1.05);
+  }
+
+  .filtro.active {
+    background-color: #2563eb; /* azul */
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); /* sombra azul */
+  }
+</style>
+
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo Continental" class="h-12">
+      </a>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" class="text-blue-600">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Título -->
+  <section class="bg-blue-50 py-10 text-center">
+    <h1 class="text-4xl font-bold">Nuestros Productos</h1>
+    <p class="text-gray-600 mt-2">Conoce nuestras máquinas de impresión, escáneres, multifuncionales y más.</p>
+  </section>
+  <!--FILTROS-->
+<div class="text-center mb-10">
+  <button data-categoria="todos" onclick="filtrarProductos('todos')" class="filtro bg-blue-600 text-white px-4 py-2 rounded m-1 active">Todos</button>
+  <button data-categoria="impresion" onclick="filtrarProductos('impresion')" class="filtro bg-gray-200 px-4 py-2 rounded m-1">Impresión</button>
+  <button data-categoria="scanner" onclick="filtrarProductos('scanner')" class="filtro bg-gray-200 px-4 py-2 rounded m-1">Scanners</button>
+  <button data-categoria="proyector" onclick="filtrarProductos('proyector')" class="filtro bg-gray-200 px-4 py-2 rounded m-1">Proyectores</button>
+  <button data-categoria="remanufacturada" onclick="filtrarProductos('remanufacturada')" class="filtro bg-gray-200 px-4 py-2 rounded m-1">Remanufacturadas</button>
+</div>
+
+
+
+
+  <!-- Contenedor de productos -->
+  <section id="productContainer" class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Aquí se cargarán los productos con JS -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
+      <div>
+        <h4 class="font-bold">Contacto</h4>
+        <p>Email: servicioalcliente@continental.com</p>
+        <p>Tel: +57 3202222222</p>
+        <p>Dirección: calle 17 #10-33</p>
+      </div>
+      <div class="mt-4 md:mt-0">
+        <h4 class="font-bold">Síguenos</h4>
+        <p>Instagram: @continental_ltda</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script que carga productos -->
+  <script src="js/productos.js"></script>
+</body>
+</html>

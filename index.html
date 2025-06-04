@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio | Empresa de Equipos de Impresión</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!--<h1 class="text-xl font-bold">TecnoPrint</h1>-->
+      <a href="index.html">
+        <img src="img/logo.jpeg" alt="Logo de la empresa" class="h-10 w-auto">
+      </a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-blue-600">Inicio</a></li>
+          <li><a href="productos.html" class="hover:text-blue-600">Productos</a></li>
+          <li><a href="servicios.html" class="hover:text-blue-600">Servicios</a></li>
+          <li><a href="nosotros.html" class="hover:text-blue-600">Nosotros</a></li>
+          <li><a href="contacto.html" class="hover:text-blue-600">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-blue-600 text-white py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Soluciones en impresión y escaneo</h2>
+    <p class="text-lg mb-6">Venta de equipos profesionales para empresas, oficinas y negocios</p>
+    <a href="#" class="bg-white text-blue-600 font-semibold px-6 py-2 rounded hover:bg-gray-100">Ver catálogo</a>
+  </section>
+
+  <!-- SOBRE LA EMPRESA -->
+  <section class="py-12 px-6 text-center">
+    <h3 class="text-2xl font-semibold mb-4">¿Quiénes somos?</h3>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      En TecnoPrint ofrecemos equipos de impresión, escaneo y digitalización de alta calidad. 
+      Brindamos asesoría y soporte técnico especializado para satisfacer las necesidades de tu empresa.
+    </p>
+  </section>
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="py-12 px-6 bg-white">
+    <h3 class="text-2xl font-semibold text-center mb-8">Productos destacados</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Card 1 -->
+      <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="img/impresora1.webp" alt="Impresora" class="rounded mb-4 w-full">
+        <h4 class="text-lg font-semibold">Impresora HP LaserJet Pro</h4>
+        <p class="text-sm text-gray-600 mb-2">Alta velocidad y eficiencia para oficinas modernas.</p>
+        <a href="#" class="text-blue-600 hover:underline">Ver más</a>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="img/impresora2.webp" alt="Escáner" class="rounded mb-4 w-full">
+        <h4 class="text-lg font-semibold">Escáner Canon DR-C240</h4>
+        <p class="text-sm text-gray-600 mb-2">Digitalización rápida y de alta calidad.</p>
+        <a href="#" class="text-blue-600 hover:underline">Ver más</a>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="img/impresora3.webp" alt="Multifuncional" class="rounded mb-4 w-full">
+        <h4 class="text-lg font-semibold">Multifuncional Epson EcoTank</h4>
+        <p class="text-sm text-gray-600 mb-2">Imprime, escanea y copia con bajo costo de tinta.</p>
+        <a href="#" class="text-blue-600 hover:underline">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 TecnoPrint. Todos los derechos reservados.</p>
+    <p class="text-sm">Contacto: info@tecnoprint.com | +57 300 123 4567</p>
+  </footer>
+<!-- Botón flotante WhatsApp -->
+<a href="https://wa.me/573202222222" target="_blank" 
+   class="whatsapp-float" 
+   aria-label="Chat por WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
