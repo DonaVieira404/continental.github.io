@@ -2,91 +2,91 @@ const productos = [
   {
     nombre: "Impresora IM 550F",
     descripcion: "Impresora de alta velocidad, ideal para oficinas.",
-    imagen: "continental.github.io/img/productos/impresoras/IM 550F.webp",
+    imagen: "img/productos/impresoras/IM 550F.webp",
     categoria: "impresion"
   },
   {
     nombre: "Impresora Ricoh P 311",
     descripcion: "Impresora de alta velocidad, ideal para oficinas.",
-    imagen: "continental.github.io/img/productos/impresoras/P 311.webp",
+    imagen: "img/productos/impresoras/P 311.webp",
     categoria: "impresion"
   },
   {
     nombre: "Impresora Ricoh P 502",
     descripcion: "Impresora de alta velocidad, ideal para oficinas.",
-    imagen: "continental.github.io/img/productos/impresoras/p 502.webp",
+    imagen: "img/productos/impresoras/p 502.webp",
     categoria: "impresion"
   },
   {
     nombre: "Impresora P C375",
     descripcion: "Impresora Color de alta velocidad, ideal para oficinas.",
-    imagen: "continental.github.io/img/productos/impresoras/pc375.webp",
+    imagen: "img/productos/impresoras/pc375.webp",
     categoria: "impresion"
   },
   {
     nombre: "Impresora P C600",
     descripcion: "Impresora Color de alta velocidad, ideal para oficinas.",
-    imagen: "continental.github.io/img/productos/impresoras/p c600.webp",
+    imagen: "img/productos/impresoras/p c600.webp",
     categoria: "impresion"
   },      
   {
     nombre: "Escáner Ricoh FI 8040",
     descripcion: "Escaneo de alta resolución para documentos y fotografías.",
-    imagen: "continental.github.io/img/productos/escaners/FI 8040.webp",
+    imagen: "img/productos/escaners/FI 8040.webp",
     categoria: "scanner"
   },
   {
     nombre: "Escáner Ricoh FI 8170",
     descripcion: "Escaneo de alta resolución para documentos y fotografías.",
-    imagen: "https://continental.github.io/img/productos/escaners/FI 8170.webp",
+    imagen: "https://img/productos/escaners/FI 8170.webp",
     categoria: "scanner"
   },
   {
     nombre: "Escáner Ricoh IX 1600",
     descripcion: "Escaneo de alta resolución para documentos y fotografías.",
-    imagen: "https://continental.github.io/img/productos/escaners/IX 1600.webp",
+    imagen: "https://img/productos/escaners/IX 1600.webp",
     categoria: "scanner"
   },
   {
     nombre: "Escáner Ricoh SP 1130",
     descripcion: "Escaneo de alta resolución para documentos y fotografías.",
-    imagen: "https://continental.github.io/img/productos/escaners/SP 1130.webp",
+    imagen: "https://img/productos/escaners/SP 1130.webp",
     categoria: "scanner"
   },      
   {
     nombre: "Multifuncional 406F",
     descripcion: "Equipo 3 en 1 reacondicionado con garantía de 6 meses.",
-    imagen: "continental.github.io/img/productos/fotocopiadoras/IM 406F.webp",
+    imagen: "img/productos/fotocopiadoras/IM 406F.webp",
     categoria: "multifuncional"
   },
   {
     nombre: "Multifuncional IM430F",
     descripcion: "Multifuncional impresora Hecha para Tu Compañia.",
-    imagen: "continental.github.io/img/productos/fotocopiadoras/IM 430F.webp",
+    imagen: "img/productos/fotocopiadoras/IM 430F.webp",
     categoria: "multifuncional"
   },
   {
     nombre: "Multifuncional IM 600F",
     descripcion: "Equipo 3 en 1 reacondicionado con garantía de 6 meses.",
-    imagen: "continental.github.io/img/productos/fotocopiadoras/IM 600F.webp",
+    imagen: "img/productos/fotocopiadoras/IM 600F.webp",
     categoria: "multifuncional"
   },
   {
     nombre: "Multifuncional IM 2500",
     descripcion: "Multifuncional impresora Hecha para Tu Compañia.",
-    imagen: "continental.github.io/img/productos/fotocopiadoras/IM 2500.webp",
+    imagen: "img/productos/fotocopiadoras/IM 2500.webp",
     categoria: "multifuncional"
   },
   {
     nombre: "Multifuncional IM C6500",
     descripcion: "Equipo 3 en 1 reacondicionado con garantía de 6 meses.",
-    imagen: "continental.github.io/img/productos/fotocopiadoras/IM C6500.webp",
+    imagen: "img/productos/fotocopiadoras/IM C6500.webp",
     categoria: "multifuncional"
   },
   {
     nombre: "Multifuncional IM C 8000",
     descripcion: "Multifuncional impresora Hecha para Tu Compañia.",
-    imagen: "continental.github.io/img/productos/fotocopiadoras/IM C8000.webp",
+    imagen: "img/productos/fotocopiadoras/IM C8000.webp",
     categoria: "multifuncional"
   }
 ];
