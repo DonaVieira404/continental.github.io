@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inicio | Empresa de Equipos de Impresión</title>
+  <title>Continental ltda</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-  }
-
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -20,9 +19,8 @@
   <!-- HEADER -->
   <header class="bg-white shadow-md">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <!--<h1 class="text-xl font-bold">TecnoPrint</h1>-->
       <a href="index.html">
-        <img src="img/logo.jpeg" alt="Logo de la empresa" class="h-10 w-auto">
+        <img src="img/logo.jpeg" alt="Logo de Continental" class="h-10 w-auto">
       </a>
       <nav>
         <ul class="flex space-x-6">
@@ -43,50 +41,273 @@
     <a href="#" class="bg-white text-blue-600 font-semibold px-6 py-2 rounded hover:bg-gray-100">Ver catálogo</a>
   </section>
 
-  <!-- SOBRE LA EMPRESA -->
+<section class="bg-white py-10">
+  <div id="carousel" class="max-w-6xl mx-auto rounded-lg shadow-lg overflow-hidden">
+    <div class="relative w-full h-64 md:h-48 max-h-72 md:max-h-64">
+
+      <div class="absolute inset-0 flex flex-col md:flex-row items-center bg-gray-50 px-6 opacity-0 transition-opacity duration-700 ease-in-out pointer-events-none" data-index="0">
+        <img src="img/continental-por-fuera.png" alt="Instalaciones de la empresa" 
+          class="carousel-image" />
+        <div class="carousel-text">
+          <h4 class="text-xl font-semibold mb-2">Nuestra empresa</h4>
+          <p class="text-gray-700">Contamos con instalaciones modernas y un equipo comprometido con la calidad y el servicio.</p>
+        </div>
+      </div>
+
+      <div class="absolute inset-0 flex flex-col md:flex-row items-center bg-gray-50 px-6 opacity-0 transition-opacity duration-700 ease-in-out pointer-events-none" data-index="1">
+        <img src="img/gerentes/johanaviloria.jpg" alt="Equipo técnico" class="carousel-image" />
+        <div class="carousel-text">
+          <h4 class="text-xl font-semibold mb-2">Equipo técnico especializado</h4>
+          <p class="text-gray-700">Profesionales con amplia experiencia en reparación y mantenimiento de equipos de impresión.</p>
+        </div>
+      </div>
+
+      <div class="absolute inset-0 flex flex-col md:flex-row items-center bg-gray-50 px-6 opacity-0 transition-opacity duration-700 ease-in-out pointer-events-none" data-index="2">
+        <img src="img/matenimiento.jpg" alt="Mantenimiento" class="carousel-image" />
+        <div class="carousel-text">
+          <h4 class="text-xl font-semibold mb-2">Servicio de mantenimiento</h4>
+          <p class="text-gray-700">Mantenimiento preventivo y correctivo para prolongar la vida útil de tus equipos.</p>
+        </div>
+      </div>
+
+      <div class="absolute inset-0 flex flex-col md:flex-row items-center bg-gray-50 px-6 opacity-0 transition-opacity duration-700 ease-in-out pointer-events-none" data-index="3">
+        <img src="img/toner.jpg" alt="Tóner y consumibles" class="carousel-image" />
+        <div class="carousel-text">
+          <h4 class="text-xl font-semibold mb-2">Tóner y consumibles</h4>
+          <p class="text-gray-700">Distribuimos tóner original y compatible para todas las marcas y modelos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center space-x-3 mt-6">
+      <button class="dot" data-dot="0" aria-label="Slide 1"></button>
+      <button class="dot" data-dot="1" aria-label="Slide 2"></button>
+      <button class="dot" data-dot="2" aria-label="Slide 3"></button>
+      <button class="dot" data-dot="3" aria-label="Slide 4"></button>
+    </div>
+  </div>
+
+  <style>
+    #carousel {
+      max-width: 900px;
+    }
+    .carousel-image {
+      width: 100%;
+      max-width: 45%;
+      max-height: 200px;
+      object-fit: contain;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      margin-right: 1.5rem;
+      flex-shrink: 0;
+    }
+    .carousel-text {
+      width: 100%;
+      max-width: 50%;
+      text-align: left;
+    }
+    /* Móvil: vertical, imagen arriba */
+    @media (max-width: 768px) {
+      .carousel-image {
+        max-width: 100%;
+        max-height: 180px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      .carousel-text {
+        max-width: 100%;
+        text-align: center;
+      }
+      .absolute.inset-0 {
+        flex-direction: column !important;
+        padding: 1rem !important;
+      }
+    }
+
+    /* Estilos para los dots */
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #9ca3af; /* gray-400 */
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .dot:hover,
+    .dot:focus {
+      background-color: #2563eb; /* blue-600 */
+      outline: none;
+    }
+    .dot.active {
+      background-color: #2563eb;
+    }
+  </style>
+
+  <script>
+    (function(){
+      const carousel = document.getElementById('carousel');
+      const slides = carousel.querySelectorAll('[data-index]');
+      const dots = carousel.querySelectorAll('.dot');
+      let currentIndex = 0;
+      let intervalId = null;
+      const slideDuration = 5000;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if(i === index){
+            slide.style.opacity = '1';
+            slide.style.pointerEvents = 'auto';
+            slide.style.zIndex = '10';
+          } else {
+            slide.style.opacity = '0';
+            slide.style.pointerEvents = 'none';
+            slide.style.zIndex = '0';
+          }
+        });
+
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === index);
+        });
+
+        currentIndex = index;
+      }
+
+      function nextSlide() {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+      }
+
+      function startAutoSlide() {
+        intervalId = setInterval(nextSlide, slideDuration);
+      }
+
+      function stopAutoSlide() {
+        clearInterval(intervalId);
+      }
+
+      // Inicializa
+      showSlide(currentIndex);
+      startAutoSlide();
+
+      // Eventos dots click
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          stopAutoSlide();
+          showSlide(parseInt(dot.getAttribute('data-dot')));
+          startAutoSlide();
+        });
+      });
+
+      // Pausa al pasar mouse
+      carousel.addEventListener('mouseenter', stopAutoSlide);
+      carousel.addEventListener('mouseleave', startAutoSlide);
+    })();
+  </script>
+</section>
+
+
+
+  <!-- ¿QUIÉNES SOMOS? -->
   <section class="py-12 px-6 text-center">
     <h3 class="text-2xl font-semibold mb-4">¿Quiénes somos?</h3>
     <p class="max-w-2xl mx-auto text-gray-700">
-      En TecnoPrint ofrecemos equipos de impresión, escaneo y digitalización de alta calidad. 
+      En Continental ofrecemos equipos de impresión, escaneo y digitalización de alta calidad. 
       Brindamos asesoría y soporte técnico especializado para satisfacer las necesidades de tu empresa.
     </p>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="bg-gray-200 py-12">
+    <h3 class="text-2xl font-semibold text-center mb-8">¿Por qué elegirnos?</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="font-semibold text-lg mb-2">Experiencia técnica</h4>
+        <p class="text-gray-700">Más de 10 años ofreciendo soluciones confiables de impresión y digitalización.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="font-semibold text-lg mb-2">Atención personalizada</h4>
+        <p class="text-gray-700">Asesoría profesional antes, durante y después de la venta.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="font-semibold text-lg mb-2">Cobertura regional</h4>
+        <p class="text-gray-700">Atendemos empresas en Valledupar y zonas cercanas del Cesar y la Costa.</p>
+      </div>
+    </div>
   </section>
 
   <!-- PRODUCTOS DESTACADOS -->
   <section class="py-12 px-6 bg-white">
     <h3 class="text-2xl font-semibold text-center mb-8">Productos destacados</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <!-- Card 1 -->
       <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:shadow-lg transition">
-        <img src="img/impresora1.webp" alt="Impresora" class="rounded mb-4 w-full">
-        <h4 class="text-lg font-semibold">Impresora HP LaserJet Pro</h4>
+        <img src="img/productos/impresoras/IM550F.webp" alt="Impresora" class="rounded mb-4 w-full">
+        <h4 class="text-lg font-semibold">Impresora Ricoh IM 550F</h4>
         <p class="text-sm text-gray-600 mb-2">Alta velocidad y eficiencia para oficinas modernas.</p>
         <a href="#" class="text-blue-600 hover:underline">Ver más</a>
       </div>
-      <!-- Card 2 -->
       <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:shadow-lg transition">
-        <img src="img/impresora2.webp" alt="Escáner" class="rounded mb-4 w-full">
-        <h4 class="text-lg font-semibold">Escáner Canon DR-C240</h4>
+        <img src="img/productos/escaners/IX1600.webp" alt="Escáner" class="rounded mb-4 w-full">
+        <h4 class="text-lg font-semibold">Escáner Ricoh IX 1600</h4>
         <p class="text-sm text-gray-600 mb-2">Digitalización rápida y de alta calidad.</p>
         <a href="#" class="text-blue-600 hover:underline">Ver más</a>
       </div>
-      <!-- Card 3 -->
       <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:shadow-lg transition">
-        <img src="img/impresora3.webp" alt="Multifuncional" class="rounded mb-4 w-full">
-        <h4 class="text-lg font-semibold">Multifuncional Epson EcoTank</h4>
+        <img src="img/productos/fotocopiadoras/IM430F.webp" alt="Multifuncional" class="rounded mb-4 w-full">
+        <h4 class="text-lg font-semibold">Multifuncional Ricoh IM 430</h4>
         <p class="text-sm text-gray-600 mb-2">Imprime, escanea y copia con bajo costo de tinta.</p>
         <a href="#" class="text-blue-600 hover:underline">Ver más</a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-800 text-white py-6 text-center">
-    <p>&copy; 2025 TecnoPrint. Todos los derechos reservados.</p>
-    <p class="text-sm">Contacto: info@tecnoprint.com | +57 300 123 4567</p>
-  </footer>
-<script src="js/whatsapp-button.js"></script>
+  <!-- TESTIMONIOS -->
+  <section class="py-12 bg-gray-100">
+    <h3 class="text-2xl font-semibold text-center mb-8">Lo que dicen nuestros clientes</h3>
+    <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto px-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <p class="italic">"Excelente servicio técnico, rápido y confiable. Muy recomendado."</p>
+        <p class="mt-4 font-semibold">— Ernesto Orozco, Alcadia V/upar</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <p class="italic">"Compramos 3 equipos multifuncionales y todo llegó a tiempo. Muy satisfechos."</p>
+        <p class="mt-4 font-semibold">— Cielomar Peñaloza, Alcaldia V/Nueva</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- CTA FINAL -->
+  <section class="bg-blue-600 text-white py-12 text-center">
+    <h3 class="text-3xl font-bold mb-4">¿Listo para modernizar tu oficina?</h3>
+    <p class="mb-6">Contáctanos para recibir asesoría gratuita y cotizaciones personalizadas.</p>
+    <a href="contacto.html" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-100">Contáctanos</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-6 mt-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
+      <div>
+        <h4 class="font-bold">Contacto</h4>
+        <p>Email: servicioalcliente@continental.com</p>
+        <p>Tel: +57 3202222222</p>
+        <p>Dirección: calle 17 #10-33</p>
+      </div>
+      <div class="mt-4 md:mt-0">
+        <h4 class="font-bold">Síguenos</h4>
+        <p>Instagram: @continental_ltda</p>
+      </div>
+    </div>
+    <hr>
+    <div class="flex flex-row justify-center">
+      <p>&copy; 2025 Continental. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN DE WHATSAPP -->
+  <script src="js/whatsapp-button.js"></script>
 
 </body>
 </html>
+
+
+
