@@ -52,12 +52,17 @@
     <!-- Formulario -->
     <div>
       <h2 class="text-2xl font-semibold mb-4">Envíanos un mensaje</h2>
-      <form class="space-y-4">
-        <input type="text" placeholder="Tu nombre" class="w-full px-4 py-2 border rounded" required />
-        <input type="email" placeholder="Tu correo" class="w-full px-4 py-2 border rounded" required />
-        <textarea placeholder="Tu mensaje" rows="5" class="w-full px-4 py-2 border rounded" required></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Enviar</button>
-      </form>
+<form action="https://formsubmit.co/vieiradonado@gmail.com" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow-md">
+  <!-- Evita spam -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://tusitio.com/gracias.html"> <!-- Redirige tras enviar -->
+
+  <input type="text" name="nombre" placeholder="Tu nombre" class="w-full px-4 py-2 border rounded" required />
+  <input type="email" name="correo" placeholder="Tu correo" class="w-full px-4 py-2 border rounded" required />
+  <textarea name="mensaje" placeholder="Tu mensaje" rows="5" class="w-full px-4 py-2 border rounded" required></textarea>
+  <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Enviar</button>
+</form>
+
     </div>
   </section>
 
@@ -97,5 +102,22 @@
     </div>
   </footer>
 <script src="js/whatsapp-button.js"></script>
+<script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function(event) {
+    const nombre = form.querySelector("input[name='nombre']");
+    const correo = form.querySelector("input[name='correo']");
+    const mensaje = form.querySelector("textarea[name='mensaje']");
+
+    if (!nombre.value || !correo.value || !mensaje.value) {
+      event.preventDefault();
+      alert("Por favor, completa todos los campos.");
+    } else if (!/\S+@\S+\.\S+/.test(correo.value)) {
+      event.preventDefault();
+      alert("Ingresa un correo válido.");
+    }
+  });
+</script>
+
 </body>
 </html>
