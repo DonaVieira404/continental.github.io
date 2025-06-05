@@ -6,33 +6,12 @@
   <title>Inicio | Empresa de Equipos de Impresión</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  z-index: 1000;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-
-.whatsapp-float:hover {
-  background-color: #1ebe57;
-}
-
-.whatsapp-float img {
-  width: 35px;
-  height: 35px;
-}
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
 
   </style>
 </head>
@@ -106,12 +85,8 @@
     <p>&copy; 2025 TecnoPrint. Todos los derechos reservados.</p>
     <p class="text-sm">Contacto: info@tecnoprint.com | +57 300 123 4567</p>
   </footer>
-<!-- Botón flotante WhatsApp -->
-<a href="https://wa.me/573202222222" target="_blank" 
-   class="whatsapp-float" 
-   aria-label="Chat por WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-</a>
+<script src="js/whatsapp-button.js"></script>
+
 
 </body>
 </html>
