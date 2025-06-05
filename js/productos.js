@@ -38,19 +38,19 @@ const productos = [
   {
     nombre: "Escáner Ricoh FI 8170",
     descripcion: "Escaneo de alta resolución para documentos y fotografías.",
-    imagen: "https://img/productos/escaners/FI 8170.webp",
+    imagen: "img/productos/escaners/FI 8170.webp",
     categoria: "scanner"
   },
   {
     nombre: "Escáner Ricoh IX 1600",
     descripcion: "Escaneo de alta resolución para documentos y fotografías.",
-    imagen: "https://img/productos/escaners/IX 1600.webp",
+    imagen: "img/productos/escaners/IX 1600.webp",
     categoria: "scanner"
   },
   {
     nombre: "Escáner Ricoh SP 1130",
     descripcion: "Escaneo de alta resolución para documentos y fotografías.",
-    imagen: "https://img/productos/escaners/SP 1130.webp",
+    imagen: "img/productos/escaners/SP 1130.webp",
     categoria: "scanner"
   },      
   {
