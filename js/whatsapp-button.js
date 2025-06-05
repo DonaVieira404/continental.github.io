@@ -1,6 +1,6 @@
 // whatsapp-button.js
 const whatsappBtn = document.createElement('a');
-whatsappBtn.href = "https://wa.me/5732022300091?text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20productos%20y%20servicios";
+whatsappBtn.href = "https://wa.me/3022300091?text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20productos%20y%20servicios";
 whatsappBtn.className = "whatsapp-float";
 whatsappBtn.target = "_blank";
 whatsappBtn.setAttribute("aria-label", "Chat en WhatsApp");
